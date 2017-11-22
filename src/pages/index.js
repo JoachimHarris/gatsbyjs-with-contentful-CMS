@@ -13,7 +13,7 @@ export default class Index extends React.Component {
             <div>
                 <h1>{data.allContentfulFrontpage.edges["0"].node.frontpageHeadline}</h1>
                 <p>{data.allContentfulFrontpage.edges["0"].node.frontpageDescription.frontpageDescription}</p>
-                <img src={data.allContentfulFrontpage.edges["0"].node.frontpageImage.file.url} alt=""/>
+                <img className="" src={data.allContentfulFrontpage.edges["0"].node.frontpageImage.file.url} alt=""/>
                 <Link to="/page-2/">Go to page 2</Link>
             </div>
         )
