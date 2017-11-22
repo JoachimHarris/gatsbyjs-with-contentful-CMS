@@ -1,13 +1,40 @@
 import React from 'react'
 import Link from 'gatsby-link'
 
-const IndexPage = () => (
-  <div>
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <Link to="/page-2/">Go to page 2</Link>
-  </div>
-)
+export default class Index extends React.Component {
+    constructor(props) {
+        super(props);
+    }
 
-export default IndexPage
+    render() {
+        const data = this.props.data;
+        console.log(data);
+        return(
+            <div>
+                <h1>{data.allContentfulFrontpage.edges["0"].node.frontpageHeadline}</h1>
+                <p>{data.allContentfulFrontpage.edges["0"].node.frontpageDescription.frontpageDescription}</p>
+                <img src={data.allContentfulFrontpage.edges["0"].node.frontpageImage.file.url} alt=""/>
+                <Link to="/page-2/">Go to page 2</Link>
+            </div>
+        )
+    }
+}
+
+export const query = graphql`
+  query FrontpageQuery {
+      allContentfulFrontpage {
+          edges {
+              node {
+                  frontpageHeadline,
+                  frontpageImage {
+                      file {
+                          url
+                      }
+                  },
+                  frontpageDescription {
+                      frontpageDescription
+                  }
+              }
+          }
+      }
+  }`
