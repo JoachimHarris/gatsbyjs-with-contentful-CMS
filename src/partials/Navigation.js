@@ -3,32 +3,36 @@ import PropTypes from 'prop-types';
 import Link from 'gatsby-link';
 
 export default class Navigation extends React.Component {
+    constructor(props) {
+        super(props);
+    }
+
     render() {
         return(
-            <div className="flex justify-between items-center ph6">
+            <div className="flex justify-between items-center ph6-l pa2">
                 <h2 className="mt3 avenir">
                     <Link
-                        className="link"
+                        className="link f5 avenir normal color-navGrey"
                         to="/">
-                            Gatsby
+                            WeGroup
                     </Link>
                 </h2>
                 <div>
                     <ul className="flex items-center ma0 list">
                         <Link
-                            to="/page-2/"
-                            className="ma0 mr4 avenir black no-underline">
-                                Nav 1
+                            to="/concepts/"
+                            className="ma0 mr4 avenir color-navGrey no-underline">
+                                Concepts
                         </Link>
                         <Link
-                            to="/"
-                            className="ma0 mr4 avenir black no-underline">
-                                Nav 2
+                            to="/aboutus/"
+                            className="ma0 mr4 avenir color-navGrey no-underline">
+                                About Us
                         </Link>
                         <Link
-                            to="/"
-                            className="ma0 mr4 avenir black no-underline">
-                                Nav 3
+                            to="/contact/"
+                            className="ma0 mr4 avenir color-navGrey no-underline">
+                                Contact
                         </Link>
                     </ul>
                 </div>

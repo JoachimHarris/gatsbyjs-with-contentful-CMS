@@ -8,11 +8,12 @@ import '../../node_modules/tachyons-sass/tachyons.scss';
 import './customTachyons.scss';
 
 import Navigation from '../partials/Navigation.js';
+import Footer from '../partials/Footer.js';
 
 const TemplateWrapper = ({ children }) => (
   <div>
     <Helmet
-      title="Gatsby"
+      title="WeGroup"
       meta={[
         { name: 'description', content: 'Sample' },
         { name: 'keywords', content: 'sample, something' },
@@ -22,6 +23,7 @@ const TemplateWrapper = ({ children }) => (
     <div>
       {children()}
     </div>
+    <Footer />
   </div>
 )
 

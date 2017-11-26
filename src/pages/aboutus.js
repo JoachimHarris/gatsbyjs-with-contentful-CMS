@@ -1,7 +1,7 @@
-import React from 'react'
+import React from 'react';
 import Link from 'gatsby-link'
 
-export default class Index extends React.Component {
+export default class AboutUs extends React.Component {
     constructor(props) {
         super(props);
     }
@@ -15,11 +15,11 @@ export default class Index extends React.Component {
                     className="flex flex-column justify-center items-center h-75">
                     <h1
                         className="avenir normal color-redOrange">
-                            {data.allContentfulFrontpage.edges["0"].node.frontpageHeadline}
+                            {data.allContentfulAboutUsPage.edges["0"].node.aboutUsHeadline}
                     </h1>
                     <p
                         className="avenir normal color-redOrange">
-                            {data.allContentfulFrontpage.edges["0"].node.frontpageDescription.frontpageDescription}
+                            {data.allContentfulAboutUsPage.edges["0"].node.aboutUsDescription.aboutUsDescription}
                     </p>
                 </div>
             </div>
@@ -28,15 +28,15 @@ export default class Index extends React.Component {
 }
 
 export const query = graphql`
-  query FrontpageQuery {
-      allContentfulFrontpage {
-          edges {
-              node {
-                  frontpageHeadline,
-                  frontpageDescription {
-                      frontpageDescription
-                  }
-              }
-          }
-      }
-  }`
+    query AboutpageQuery {
+        allContentfulAboutUsPage {
+            edges {
+                node {
+                    aboutUsHeadline
+                    aboutUsDescription {
+                        aboutUsDescription
+                    }
+                }
+            }
+        }
+    }`
