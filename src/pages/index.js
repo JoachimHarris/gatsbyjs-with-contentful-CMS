@@ -11,10 +11,18 @@ export default class Index extends React.Component {
         console.log(data);
         return(
             <div>
-                <h1>{data.allContentfulFrontpage.edges["0"].node.frontpageHeadline}</h1>
-                <p>{data.allContentfulFrontpage.edges["0"].node.frontpageDescription.frontpageDescription}</p>
-                <img className="" src={data.allContentfulFrontpage.edges["0"].node.frontpageImage.file.url} alt=""/>
-                <Link to="/page-2/">Go to page 2</Link>
+                <div>
+                    <img
+                        className="w-100 vh-75"
+                        src={data.allContentfulFrontpage.edges["0"].node.frontpageImage.file.url}
+                        alt=""
+                    />
+                </div>
+                <div className="ph6">
+                    <h1>{data.allContentfulFrontpage.edges["0"].node.frontpageHeadline}</h1>
+                    <p>{data.allContentfulFrontpage.edges["0"].node.frontpageDescription.frontpageDescription}</p>
+                    <Link to="/page-2/">Go to page 2</Link>
+                </div>
             </div>
         )
     }

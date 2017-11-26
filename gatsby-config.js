@@ -11,6 +11,14 @@ module.exports = {
                 spaceId: `p6m1eepbneht`,
                 accessToken: `38ebf679ec9b431edfa34617134f1212668ee8da6acf407bb921a61c8fd69938`,
             }
+        },
+        {
+            resolve: `gatsby-plugin-google-fonts`,
+            options: {
+                fonts: [
+                    `Roboto\:300,400,400i,700`
+                ]
+            }
         }
     ]
 };
