@@ -14,24 +14,24 @@ export default class Navigation extends React.Component {
                     <Link
                         className="link f5 avenir normal color-navGrey"
                         to="/">
-                            WeGroup
+                            <span className="f5 fw4">We</span><span className="f5 fw1">Group</span>
                     </Link>
                 </h2>
                 <div>
                     <ul className="flex items-center ma0 list">
                         <Link
                             to="/concepts/"
-                            className="ma0 mr4 avenir color-navGrey no-underline">
+                            className="ma0 mr4 avenir color-navGrey fw1 no-underline">
                                 Concepts
                         </Link>
                         <Link
                             to="/aboutus/"
-                            className="ma0 mr4 avenir color-navGrey no-underline">
+                            className="ma0 mr4 avenir color-navGrey fw1 no-underline">
                                 About Us
                         </Link>
                         <Link
                             to="/contact/"
-                            className="ma0 mr4 avenir color-navGrey no-underline">
+                            className="ma0 mr4 avenir color-navGrey fw1 no-underline">
                                 Contact
                         </Link>
                     </ul>

@@ -4,7 +4,8 @@ import Link from 'gatsby-link'
 export default class Footer extends React.Component {
     render() {
         return(
-            <div className="footer w-100 h3 bg-lightBlue">
+            <div className="footer w-100 h3 color-footer-bg ph6">
+
             </div>
         )
     }
