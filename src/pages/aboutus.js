@@ -43,22 +43,22 @@ export default class AboutUs extends React.Component {
             <h3 className="avenir color-redOrange normal">Our Values</h3>
             </div>
             <div className="flex flex-wrap">
-                <div className="w-25 vh-25 flex justify-center items-center">
+                <div className="fl w-25 w-50-m w-25-l tc pv4 justify-center items-center">
                 <p className="avenir color-redOrange normal">
                     Design
                 </p>
                 </div>
-                <div className="w-25 vh-25 flex justify-center items-center">
+                <div className="fl w-25 w-50-m w-25-l tc pv4 justify-center items-center">
                 <p className="avenir color-redOrange normal">
                     People
                 </p>
                 </div>
-                <div className="w-25 vh-25 flex justify-center items-center">
+                <div className="fl w-25 w-50-m w-25-l tc pv4 justify-center items-center">
                 <p className="avenir color-redOrange normal">
                     Fun
                 </p>
                 </div>
-                <div className="w-25 vh-25 flex justify-center items-center">
+                <div className="fl w-25 w-50-m w-25-l tc pv4 justify-center items-center">
                 <p className="avenir color-redOrange normal">
                     Love
                 </p>

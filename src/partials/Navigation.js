@@ -20,18 +20,28 @@ export default class Navigation extends React.Component {
                 <div>
                     <ul className="flex items-center ma0 list">
                         <Link
+                            to="/"
+                            className="f7 f5-ns ma0 mr4 dib avenir color-navGrey fw1 no-underline">
+                                Group Structure
+                        </Link>
+                        <Link
+                            to="/"
+                            className="f7 f5-ns ma0 mr4 avenir color-navGrey fw1 no-underline">
+                                News
+                        </Link>
+                        <Link
                             to="/concepts/"
-                            className="ma0 mr4 avenir color-navGrey fw1 no-underline">
+                            className="f7 f5-ns ma0 mr4 avenir color-navGrey fw1 no-underline">
                                 Concepts
                         </Link>
                         <Link
                             to="/aboutus/"
-                            className="ma0 mr4 avenir color-navGrey fw1 no-underline">
+                            className="f7 f5-ns ma0 mr4 avenir color-navGrey fw1 no-underline">
                                 About Us
                         </Link>
                         <Link
                             to="/contact/"
-                            className="ma0 mr4 avenir color-navGrey fw1 no-underline">
+                            className="f7 f5-ns ma0 mr4 avenir color-navGrey fw1 no-underline">
                                 Contact
                         </Link>
                     </ul>
