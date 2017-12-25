@@ -25,7 +25,7 @@ export default class Contact extends React.Component {
                     </div>
                 </div>
                 <div className="flex flex-wrap bt b--light-gray">
-                    <div className="w-50 h-60 flex flex-column items-center justify-center pt4">
+                    <div className="w-50-ns w-100-m h-60 flex flex-column items-center justify-center pt4">
                         <h3 className="avenir fw4 silver">
                             {data.allContentfulWeGroupContact.edges["0"].node.contactFieldHeadline}
                         </h3>
@@ -43,7 +43,7 @@ export default class Contact extends React.Component {
                             Danish Vat Number: {data.allContentfulWeGroupContact.edges["0"].node.contactFieldVatNumber}
                         </p>
                     </div>
-                    <div className="w-50 h-60 flex justify-center">
+                    <div className="w-50-ns w-100-m h-60 flex justify-center">
                         <img className="w-100 h-100 mb0 o-60" src={data.allContentfulWeGroupContact.edges["0"].node.contactFieldGoogleMap.file.url} alt=""/>
                     </div>
                 </div>
