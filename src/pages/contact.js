@@ -16,7 +16,7 @@ export default class Contact extends React.Component {
                         className="flex flex-column justify-center items-center h-75">
                             <h1
                                 className="avenir normal color-redOrange">
-                                <span className="fw4">We</span><span className="fw1">Group</span>
+                                <span className="fw4">we</span><span className="fw1">group</span>
                             </h1>
                             <p
                                 className="avenir normal color-redOrange">
