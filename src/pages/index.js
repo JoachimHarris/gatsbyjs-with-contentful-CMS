@@ -15,11 +15,11 @@ export default class Index extends React.Component {
                     className="flex flex-column justify-center items-center h-75">
                     <h1
                         className="avenir normal color-redOrange">
-                        <span className="fw4">We</span><span className="fw1">Group</span>
+                        <span className="fw4">We are </span><span className="fw1">Group</span>
                     </h1>
                     <p
                         className="avenir normal color-redOrange">
-                            {data.allContentfulFrontpage.edges["0"].node.frontpageDescription.frontpageDescription}
+                            {data.allContentfulWegroupFrontpage.edges["0"].node.frontpageDescription.frontpageDescription}
                     </p>
                 </div>
             </div>
@@ -29,7 +29,7 @@ export default class Index extends React.Component {
 
 export const query = graphql`
   query FrontpageQuery {
-      allContentfulFrontpage {
+      allContentfulWegroupFrontpage {
           edges {
               node {
                   frontpageDescription {
